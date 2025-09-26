@@ -211,3 +211,19 @@ canvas#bg-canvas {
 .form-action{
   padding: 10px 10px;
 }
+.proj-tech {
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--accent);
+}
+
+/* Optional: badges for each tech */
+.tech-badge {
+  display: inline-block;
+  background: rgba(110, 231, 183, 0.2);
+  color: var(--accent);
+  padding: 4px 8px;
+  margin: 2px 4px 2px 0;
+  border-radius: 6px;
+  font-size: 12px;
+}

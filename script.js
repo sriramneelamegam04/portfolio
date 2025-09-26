@@ -28,6 +28,14 @@ async function loadProjects() {
       clone.querySelector('.proj-title').textContent = p.name;
       clone.querySelector('.proj-tagline').textContent = p.tagline || '';
       clone.querySelector('.proj-desc').textContent = p.short || '';
+      const techEl = clone.querySelector('.proj-tech');
+if (p.tech && p.tech.length) {
+  techEl.innerHTML = p.tech.map(t => `<span class="tech-badge">${t}</span>`).join(' ');
+} else {
+  techEl.textContent = '';
+}
+
+
 
       // GitHub link
       const viewCode = clone.querySelector('.view-code');

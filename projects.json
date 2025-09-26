@@ -67,7 +67,9 @@
     "long": "Designed a real-estate website with property listings, search filters, and detailed property views, supported by a secure backend. Includes admin panel for adding and updating properties.",
     "tech": [
       "PHP",
-      "MySQL"
+      "MySQL",
+      "Postman",
+      "Razorpay"
     ],
     "github": "https://github.com/sriramneelamegam04/property_site",
     "thumbnail": "images/prop_2.png", 
@@ -85,7 +87,10 @@
     "long": "Built a website for institutions to display courses, manage student inquiries, and update content through an admin panel. Backend built with PHP & MySQL for dynamic content management.",
     "tech": [
       "PHP",
-      "MySQL"
+      "MySQL",
+      "Postman",
+      "HTML",
+      "CSS"
     ],
     "github": "https://github.com/sriramneelamegam04/-institution_site",
     "thumbnail": "images/cen_1.png", 
@@ -103,7 +108,8 @@
     "long": "Developed a web solution for franchise businesses with registration forms, lead management, and centralized data handling. Secure backend with PHP & MySQL ensures smooth data flow.",
     "tech": [
       "PHP",
-      "MySQL"
+      "MySQL",
+      "Postman"
     ],
     "github": "https://github.com/sriramneelamegam04/franchise_site",
     "thumbnail": "images/cen_1.png", 
