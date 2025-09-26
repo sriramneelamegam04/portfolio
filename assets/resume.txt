@@ -1,0 +1,7 @@
+Sri - Backend Developer
+-----------------------
+Experience: 5+ years in PHP & MySQL
+Skills: PHP, MySQL, REST APIs, JWT, Redis, Docker, SQL Optimization
+Projects: InvoicePro, InventoryCMS, SupportDesk, Marketplace API, Forms & Analytics, Enquiries CRM
+GitHub: https://github.com/your-username
+Email: you@example.com

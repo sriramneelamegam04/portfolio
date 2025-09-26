@@ -1,0 +1,116 @@
+[
+    {
+  "name": "Centralized Dashboard Monitoring",
+  "tagline": "Data-driven industrial KPIs",
+  "short": "A centralized dashboard to collect, process, and visualize industrial data for decision-making.",
+  "long": "Built a centralized dashboard to collect, process, and visualize industrial data, enabling managers to monitor KPIs and make informed decisions. Backend powered by PHP & MySQL with secure role-based access.",
+  "tech": ["PHP","MySQL","Charts","HTML","CSS","JS"],
+  "github": "https://github.com/sriramneelamegam04/Centralized-Dashboard-Monitoring-For-Data-Driven-Decision-In-Industries",
+  "thumbnail": "images/cen_1.png",   
+  "screenshots": [
+    "images/cen_1.png",
+    "images/cen_2.png",
+    "images/cen_3.png",
+    "images/cen_4.png",
+    "images/cen_5.png"
+  ]
+},
+
+    
+  {
+    "name": "Billing Software",
+    "tagline": "Multi-vertical billing with Razorpay",
+    "short": "Billing system with invoice generation, tax calculation, and Razorpay integration.",
+    "long": "Developed a multi-vertical billing management system with invoice generation, tax calculation, and customer record management. Integrated Razorpay payment gateway (COD/UPI) for seamless payments and enabled secure data storage. Built admin & user dashboards for billing analytics, revenue tracking, and compliance monitoring.",
+    "tech": [
+      "PHP",
+      "MySQL",
+      "Razorpay",
+      "Postman"
+    ],
+    "github": "https://github.com/sriramneelamegam04/Billing_Software",
+    "thumbnail": "images/cen_1.png", 
+    "screenshots": [
+      "images/bill_1.png",
+      "images/bill_2.png",
+      "images/bill_3.png",
+      "images/bill_4.png",
+      "images/bill_5.png"
+    ]
+  },
+  {
+    "name": "Order App",
+    "tagline": "QR-based multi-vertical ordering",
+    "short": "Order management app with QR ordering, subscriptions, and Razorpay integration.",
+    "long": "Developed a multi-vertical order management system with QR-based ordering, subscription plans, and product management. Integrated Razorpay payment gateway (COD/UPI) and enabled real-time order tracking. Built admin & user dashboards for analytics, revenue reports, and subscription monitoring.",
+    "tech": [
+      "PHP",
+      "MySQL",
+      "Razorpay",
+      "Postman"
+    ],
+    "github": "https://github.com/sriramneelamegam04/Order_App",
+    "thumbnail": "images/cen_1.png", 
+    "screenshots": [
+      "images/order_1.png",
+      "images/order_2.png",
+      "images/order_3.png",
+      "images/order_4.png",
+      "images/order_5.png",
+      "images/order_6.png"
+    ]
+  },
+  {
+    "name": "Property Site",
+    "tagline": "Real estate property listings",
+    "short": "Website for property search and listings with detailed views.",
+    "long": "Designed a real-estate website with property listings, search filters, and detailed property views, supported by a secure backend. Includes admin panel for adding and updating properties.",
+    "tech": [
+      "PHP",
+      "MySQL"
+    ],
+    "github": "https://github.com/sriramneelamegam04/property_site",
+    "thumbnail": "images/prop_2.png", 
+    "screenshots": [
+      "images/prop_2.png",
+      "images/prop_3.png",
+      "images/prop_4.png"
+      
+    ]
+  },
+  {
+    "name": "Institution Site",
+    "tagline": "Course management & inquiries",
+    "short": "Institutional website with courses, inquiries, and admin control.",
+    "long": "Built a website for institutions to display courses, manage student inquiries, and update content through an admin panel. Backend built with PHP & MySQL for dynamic content management.",
+    "tech": [
+      "PHP",
+      "MySQL"
+    ],
+    "github": "https://github.com/sriramneelamegam04/-institution_site",
+    "thumbnail": "images/cen_1.png", 
+    "screenshots": [
+      "images/ins_1.png",
+      "images/ins_2.png",
+      "images/ins_3.png"
+      
+    ]
+  },
+  {
+    "name": "Franchise Site",
+    "tagline": "Franchise lead & data management",
+    "short": "Web solution for franchise businesses with registration and lead handling.",
+    "long": "Developed a web solution for franchise businesses with registration forms, lead management, and centralized data handling. Secure backend with PHP & MySQL ensures smooth data flow.",
+    "tech": [
+      "PHP",
+      "MySQL"
+    ],
+    "github": "https://github.com/sriramneelamegam04/franchise_site",
+    "thumbnail": "images/cen_1.png", 
+    "screenshots": [
+      "images/fran_1.png",
+      "images/fran_2.png",
+      "images/fran_3.png"
+    ]
+  }
+]

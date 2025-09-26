@@ -1,0 +1,4 @@
+MIT License
+Copyright (c) 2025 Sri
+Permission is hereby granted, free of charge, to any person obtaining a copy...
+(Replace with full license if you wish)
