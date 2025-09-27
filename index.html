@@ -123,16 +123,26 @@
       to   { text-shadow: 0 0 20px #ffcc70; }
     }
 
-    .card {
-      background: #0b1220;
-      border-radius: 18px;
-      padding: 25px;
-      margin: 30px auto;
-      width: 100%;
-      max-width: 1200px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-      transition: transform 0.3s ease-in-out;
-    }
+ .card {
+  background: #0b1220;
+  border-radius: 18px;
+  padding: 20px;           /* slightly smaller padding for mobile */
+  margin: 20px auto;
+  width: 90%;               /* use relative width */
+  max-width: 1200px;        /* lower max-width for better mobile fit */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Optional: adjust card padding for very small screens */
+@media (max-width: 600px) {
+  .card {
+    padding: 15px;
+    margin: 15px auto;
+    width: 95%;
+  }
+}
+
 
     .card:hover {
       transform: scale(1.02);
