@@ -21,7 +21,7 @@
       <p>Building robust PHP & MySQL systems, APIs, and scalable apps.</p>
       <div class="cta">
         <a class="btn primary" href="#projects">See my work</a>
-        <a class="btn ghost" href="assets/Sriram_N_Resume (1).pdf" download>Download resume</a>
+        <a class="btn primary" href="assets/Sriram_N_Resume (1).pdf" download>Download resume</a>
       </div>
       <div class="metrics">
         <div><strong>6+  </strong><span>PHP,MySQL projects</span></div>
@@ -139,23 +139,94 @@
 
 </main>
 
+<!-- Add Font Awesome for WhatsApp logo -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <!-- Contact Box with animation -->
 <section id="contact-box" style="padding:20px;">
   <div class="contact-box" style="background:#FF7A59;color:#fff;padding:18px;border-radius:12px;animation:float 4s ease-in-out infinite;">
     <h3>Get in Touch</h3>
     <p>I’m open to new opportunities, ideas, and collaborations. Let’s build something awesome together!</p>
-    <a href="mailto:sriramneelamegam04@gmail.com" class="btn" style="background:#fff;color:#FF7A59;margin-top:10px;display:inline-block;">CONTACT ME</a>
+    
+    <!-- Button Container -->
+    <div style="display:flex;align-items:center;gap:12px;margin-top:12px;">
+      
+      <!-- Email Button -->
+      <a href="mailto:sriramneelamegam04@gmail.com" 
+         class="btn contact-btn">
+         CONTACT ME
+      </a>
+
+      <!-- WhatsApp Button with Logo -->
+      <a href="https://wa.me/91XXXXXXXXXX" target="_blank" 
+         class="btn whatsapp-btn">
+         <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
   </div>
+
   <!-- Footer -->
-<footer class="foot container">
-  <div>© Sriram — Backend Developer</div>
-  <div class="socials">
-    <a href="https://github.com/sriramneelamegam04" id="github-link" title="GitHub">GitHub</a>
-  </div>
-</footer>
+  <footer class="foot container">
+    <div>© Sriram — Backend Developer</div>
+    <div class="socials">
+      <a href="https://github.com/sriramneelamegam04" id="github-link" title="GitHub">GitHub</a>
+    </div>
+  </footer>
 </section>
 
+<!-- Extra Styling -->
+<style>
+  .contact-btn {
+    background:#fff;
+    color:#FF7A59;
+    padding:8px 14px;
+    border-radius:6px;
+    text-decoration:none;
+    font-weight:600;
+    transition:all 0.3s ease;
+  }
+  .contact-btn:hover {
+    background:#ffe0d9;
+    transform:translateY(-2px);
+    box-shadow:0 4px 8px rgba(0,0,0,0.15);
+  }
+
+  .whatsapp-btn {
+    background:#25D366;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    text-decoration:none;
+    font-size:22px;
+    transition:all 0.4s ease;
+    position:relative;
+    overflow:hidden;
+  }
+  .whatsapp-btn:hover {
+    transform:scale(1.15) rotate(10deg);
+    box-shadow:0 0 18px rgba(37,211,102,0.7);
+  }
+  .whatsapp-btn::after {
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    background:rgba(255,255,255,0.2);
+    top:0;left:0;
+    opacity:0;
+    transform:scale(0.5);
+    transition:all 0.4s ease;
+  }
+  .whatsapp-btn:hover::after {
+    opacity:1;
+    transform:scale(1.3);
+  }
+</style>
 
 
 <script src="script.js"></script>

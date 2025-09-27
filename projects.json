@@ -29,13 +29,13 @@
       "Postman"
     ],
     "github": "https://github.com/sriramneelamegam04/Billing_Software",
-    "thumbnail": "images/cen_1.png", 
+    "thumbnail": "images/bill_4.png", 
     "screenshots": [
-      "images/bill_1.png",
-      "images/bill_2.png",
-      "images/bill_3.png",
       "images/bill_4.png",
-      "images/bill_5.png"
+      "images/bill_5.png",
+      "images/bill_3.png",
+      "images/bill_2.png",
+      "images/bill_1.png"
     ]
   },
   {
@@ -90,7 +90,8 @@
       "MySQL",
       "Postman",
       "HTML",
-      "CSS"
+      "CSS",
+      "JS"
     ],
     "github": "https://github.com/sriramneelamegam04/-institution_site",
     "thumbnail": "images/cen_1.png", 
