@@ -76,8 +76,8 @@
   </div>
 
       <div class="proj-footer">
-        <a class="btn small view-code" target="_blank" rel="noopener">View on GitHub</a>
-        <button class="btn small ghost details-btn">Details</button>
+        <a class="btn small primary view-code" target="_blank" rel="noopener">View on GitHub</a>
+        <button class="btn small primary ghost details-btn">Details</button>
       </div>
     </article>
   </template>
@@ -101,41 +101,437 @@
     <button id="iv-close" class="modal-close">&times;</button>
   </div>
 
-  <!-- Skills -->
-<section id="skills" class="card reveal">
-  <h2>Skills</h2>
-  <div class="skill-group">
-    <h3>Web Technologies</h3>
-    <p>PHP, SQL, WordPress, HTML5, CSS3, JavaScript</p>
-  </div>
-  <div class="skill-group">
-    <h3>Frameworks</h3>
-    <p>Laravel</p>
-    <p>Bootstrap</p>
-  </div>
-  <div class="skill-group">
-    <h3>Databases</h3>
-    <p>MySQL, MongoDB</p>
-  </div>
-  <div class="skill-group">
-    <h3>Software Development</h3>
-    <p>Python (Advanced), C (Basic)</p>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, #ff7a59, #ffcc70);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glow 3s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff7a59; }
+      to   { text-shadow: 0 0 20px #ffcc70; }
+    }
+
+    .card {
+      background: #0b1220;
+      border-radius: 18px;
+      padding: 25px;
+      margin: 30px auto;
+      width: 100%;
+      max-width: 1200px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    /* Skill Groups */
+    .skill-group {
+      margin-bottom: 20px;
+      padding: 15px;
+      border-left: 4px solid #ff7a59;
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      transition: all 0.4s ease-in-out;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .skill-group i {
+      font-size: 1.6rem;
+      color: #ffcc70;
+      flex-shrink: 0;
+    }
+
+    .skill-group:hover {
+      background: rgba(255, 122, 89, 0.15);
+      transform: translateX(10px);
+    }
+
+    /* Tools */
+    .tools-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      padding: 0;
+      list-style: none;
+    }
+
+    .tool {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 18px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #ff7a59, #ffcc70);
+      color: #111;
+      font-weight: 600;
+      transition: all 0.4s ease;
+      cursor: pointer;
+    }
+
+    .tool i {
+      font-size: 1.2rem;
+    }
+
+    .tool:hover {
+      transform: scale(1.12) rotate(-2deg);
+      box-shadow: 0 6px 15px rgba(255,122,89,0.6);
+    }
+
+    /* Scroll reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(60px);
+      transition: all 0.8s ease-in-out;
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+
+<!-- Experience Timeline Section -->
+<section id="experience" class="card reveal">
+  <h2 class="section-title">💼 Experience</h2>
+  <div class="timeline-container">
+    <div class="timeline-line"></div>
+
+    <!-- Timeline Item 1 -->
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <div class="exp-date">June 2025 – Present</div>
+        <div class="exp-role">BACKEND DEVELOPER</div>
+        <div class="exp-company">Q ADS PVT LTD, KARAIKUDI (INDIA)</div>
+        <div class="exp-desc">
+          Working on backend development using PHP & MySQL, building APIs and scalable systems.
+        </div>
+      </div>
+    </div>
+
+    <!-- Timeline Item 2 -->
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <div class="exp-date">July 2024 – Aug 2024</div>
+        <div class="exp-role">INTERNSHIP - HTML, CSS</div>
+        <div class="exp-company">INETZZ TECHNOLOGY, CHENNAI (INDIA)</div>
+        <div class="exp-desc">
+          Completed internship focused on frontend basics including HTML and CSS.
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
-<!-- Tools & Platforms -->
-<section id="tools/platforms" class="card reveal">
-  <h2>Tools & Platforms</h2>
-  <ul>
-    <li>VS CODE</li>
-    <li>PYCHARM</li>
-    <li>IDLE</li>
-    <li>POSTMAN</li>
-    <li>GITHUB</li>
-    <li>EXCEL</li>
-    <li>MS OFFICE</li>
-  </ul>
+<style>
+/* Timeline Container */
+.timeline-container {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 30px;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  width: 4px;
+  height: 0;
+  background: linear-gradient(to bottom, #6ee7b7, #34d399);
+  border-radius: 2px;
+  transition: height 1s ease-out;
+}
+
+/* Timeline Items */
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+
+.timeline-item .timeline-dot {
+  position: absolute;
+  left: -2px;
+  top: 0;
+  width: 14px;
+  height: 14px;
+  background: linear-gradient(to bottom, #6ee7b7, #34d399);
+  border-radius: 50%;
+  border: 3px solid var(--bg);
+  transform: scale(0);
+  transition: transform 0.5s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+.timeline-content {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02));
+  padding: 18px 22px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.exp-date { font-size: 13px; font-weight: 500; color: var(--accent); margin-bottom: 6px; }
+.exp-role { font-size: 16px; font-weight: 700; margin-bottom: 4px; color: #fff; }
+.exp-company { font-size: 14px; color: var(--muted); margin-bottom: 8px; }
+.exp-desc { font-size: 13px; color: var(--muted); line-height: 1.4; }
+
+/* Reveal animation */
+.timeline-item.reveal-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-item.reveal-active .timeline-dot {
+  transform: scale(1);
+  animation: bounce-dot 0.6s forwards;
+}
+
+/* Hover pulse effect for timeline card */
+.timeline-item:hover .timeline-dot {
+  animation: pulse-dot 0.8s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.4); }
+  100% { transform: scale(1); }
+}
+
+/* Optional: subtle card lift on hover */
+.timeline-item:hover .timeline-content {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.18);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Bounce dot animation */
+@keyframes bounce-dot {
+  0% { transform: scale(0); }
+  40% { transform: scale(1.3); }
+  60% { transform: scale(0.85); }
+  80% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Responsive */
+@media(max-width:700px){
+  .timeline-container { padding-left: 20px; }
+  .timeline-content { padding: 14px 16px; }
+  .exp-role { font-size: 15px; }
+  .exp-company, .exp-desc { font-size: 12px; }
+}
+</style>
+
+<script>
+// Scroll reveal + growing line + bounce dot animation
+function animateExperienceTimeline() {
+  const items = document.querySelectorAll('#experience .timeline-item');
+  const line = document.querySelector('#experience .timeline-line');
+
+  let maxHeight = 0;
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('reveal-active');
+
+        // Grow line dynamically
+        const itemBottom = entry.target.offsetTop + entry.target.offsetHeight/2;
+        if(itemBottom > maxHeight) {
+          maxHeight = itemBottom;
+          line.style.height = maxHeight + 'px';
+        }
+      }
+    });
+  }, { threshold: 0.2 });
+
+  items.forEach(item => observer.observe(item));
+}
+
+// Init after DOM loaded
+document.addEventListener('DOMContentLoaded', () => animateExperienceTimeline());
+</script>
+
+
+
+
+
+
+
+  <!-- Skills -->
+<section id="skills" class="card reveal">
+  <h2 class="section-title">⚡ Skills</h2>
+  <div class="skills-container">
+
+    <!-- Web Technologies -->
+    <h3 class="skill-heading">🌐 Web Technologies</h3>
+    <div class="skills-list">
+      <div class="skill-box"><i class="fa-brands fa-php"></i> PHP</div>
+      <div class="skill-box"><i class="fa-solid fa-database"></i> SQL</div>
+      <div class="skill-box"><i class="fa-brands fa-html5"></i> HTML5</div>
+      <div class="skill-box"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+      <div class="skill-box"><i class="fa-brands fa-js"></i> JavaScript</div>
+    </div>
+
+    <!-- Frameworks -->
+    <h3 class="skill-heading">🖥 Frameworks</h3>
+    <div class="skills-list">
+      <div class="skill-box"><i class="fa-brands fa-laravel"></i> Laravel</div>
+      <div class="skill-box"><i class="fa-brands fa-wordpress"></i> WordPress</div>
+      <div class="skill-box"><i class="fa-brands fa-bootstrap"></i> Bootstrap</div>
+    </div>
+
+    <!-- Databases -->
+    <h3 class="skill-heading">🗄 Databases</h3>
+    <div class="skills-list">
+      <div class="skill-box"><i class="fa-solid fa-database"></i> MySQL</div>
+      <div class="skill-box"><i class="fa-solid fa-leaf"></i> MongoDB</div>
+    </div>
+
+    <!-- Software Development -->
+    <h3 class="skill-heading">💻 Software Development</h3>
+    <div class="skills-list">
+      <div class="skill-box"><i class="fa-brands fa-python"></i> Python (Advanced)</div>
+      <div class="skill-box"><i class="fa-solid fa-terminal"></i> C (Basic)</div>
+    </div>
+
+  </div>
 </section>
+
+<!-- CSS for Skills -->
+<style>
+  .skills-container {
+    margin-top: 15px;
+  }
+
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+  }
+
+  .skill-box {
+    background: linear-gradient(135deg, #ff7a59, #ffcc70);
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+  }
+
+  .skill-box i {
+    font-size: 18px;
+  }
+
+  .skill-box:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 6px 15px rgba(255, 140, 0, 0.6);
+  }
+
+  /* Section Title */
+  #skills .section-title {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff7a59;
+    text-align: center;
+    text-shadow: 0 0 12px rgba(255, 122, 89, 0.6);
+    animation: glow 2s infinite alternate;
+  }
+
+  /* Headings Animation */
+  .skill-heading {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff7a59;
+    margin: 12px 0;
+    position: relative;
+    animation: slideIn 1s ease;
+  }
+
+  .skill-heading::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(135deg, #ff7a59, #ffcc70);
+    margin-top: 5px;
+    border-radius: 2px;
+    animation: expand 1s ease;
+  }
+
+  /* Animations */
+  @keyframes glow {
+    from { text-shadow: 0 0 5px #ff7a59, 0 0 10px #ffcc70; }
+    to { text-shadow: 0 0 15px #ffcc70, 0 0 25px #ff7a59; }
+  }
+
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  @keyframes expand {
+    from { width: 0; }
+    to { width: 60px; }
+  }
+</style>
+
+
+
+
+  <!-- Tools & Platforms -->
+  <section id="tools-platforms" class="card reveal">
+    <h2 class="section-title">🛠 Tools & Platforms</h2>
+    <ul class="tools-list">
+      <li class="tool animate"><i class="fa-solid fa-code"></i> VS Code</li>
+      <li class="tool animate"><i class="fa-solid fa-code"></i> PyCharm</li>
+      <li class="tool animate"><i class="fa-solid fa-terminal"></i> IDLE</li>
+      <li class="tool animate"><i class="fa-solid fa-paper-plane"></i> Postman</li>
+      <li class="tool animate"><i class="fa-brands fa-github"></i> GitHub</li>
+      <li class="tool animate"><i class="fa-solid fa-file-excel"></i> Excel</li>
+      <li class="tool animate"><i class="fa-solid fa-file-word"></i> MS Office</li>
+    </ul>
+  </section>
+
+  <script>
+    // Scroll reveal
+    window.addEventListener("scroll", () => {
+      const reveals = document.querySelectorAll(".reveal");
+      reveals.forEach((el) => {
+        const windowHeight = window.innerHeight;
+        const revealTop = el.getBoundingClientRect().top;
+        const revealPoint = 100;
+        if (revealTop < windowHeight - revealPoint) {
+          el.classList.add("active");
+        }
+      });
+    });
+  </script>
+
 
 </main>
 
@@ -264,11 +660,6 @@
     }
   }
 </style>
-
-
-
-
-
 <script src="script.js"></script>
 </body>
 </html>
