@@ -72,8 +72,7 @@
       "Razorpay"
     ],
     "github": "https://github.com/sriramneelamegam04/property_site",
-    "thumbnail": "images/prop_2.png",
-    "site": "https://quraproperties.in/", 
+    "thumbnail": "images/prop_2.png", 
     "screenshots": [
       "images/prop_2.png",
       "images/prop_3.png",
@@ -114,7 +113,6 @@
       "Postman"
     ],
     "github": "https://github.com/sriramneelamegam04/franchise_site",
-    "site": "https://qadsfranchise.com/",
     "thumbnail": "images/cen_1.png", 
     "screenshots": [
       "images/fran_1.png",
