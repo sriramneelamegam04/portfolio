@@ -167,4 +167,3 @@ window.addEventListener('DOMContentLoaded', () => {
   loadProjects();
   setupReveal();
 });
-
